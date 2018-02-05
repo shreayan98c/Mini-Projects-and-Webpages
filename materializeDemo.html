@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>Materialize Demo</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="proceedMat.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+	<script type="text/javascript">
+	function showForm() 
+	{
+		var x = document.getElementById("regform");
+		if (x.style.display === "none" || x.style.display=="") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+	}
+	function showMsgCat() 
+	{
+		var x = document.getElementById("cat");
+		if (x.style.display === "none" || x.style.display=="") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+	}
+
+	function showMsgDog() 
+	{
+		var x = document.getElementById("dog");
+		if (x.style.display === "none" || x.style.display=="") 
+		{
+			x.style.display = "block";
+		} 
+		else 
+		{
+			x.style.display = "none";
+		}
+	}
+	</script>
+</head>
+<body>
+
+	<nav>
+		<div class="navbar-wrapper container">
+			<a href="#" class="brand-logo">WisOpt <img src="https://wisopt.com/images/favicon1.png" style="width: 30px;"></a>
+			<ul class="right">
+				<li><a href="#">Home <i class="fas fa-home"></i></a></li>
+				<li><a href="#">Login  <i class="fa fa-user"></i></a></li>
+				<li><a href="#">Register  <i class="fa fa-user-plus"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="dropBtn">
+		<div class="container">
+			<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Select One</a>
+		</div>
+	</div>
+
+	<!-- Dropdown Structure -->
+	<ul id='dropdown1' class='dropdown-content'>
+		<li><a href="#!" onclick="showForm();">Human</a></li>
+		<li><a href="#!" onclick="showMsgCat();">Cat</a></li>
+		<li><a href="#!" onclick="showMsgDog();">Dog</a></li>
+	</ul>
+
+	<div class="container">
+		<form id="regform">
+			<h6 style="color: #0b65b1"><i class="fas fa-user"></i> Name <input type="text"></h6>
+			<h6 style="color: #0b65b1"><i class="fas fa-envelope"></i> Email <input type="email"></h6>
+			<h6 style="color: #0b65b1"><i class="fas fa-phone"></i> Contact <input type="number"></h6>
+			<h6 style="color: #0b65b1"><i class="fas fa-key"></i> Password <input type="password"></h6>
+			<button type="submit" class="btn myBtn">Submit</button>
+		</form>
+	</div>
+
+	<div class="container message">
+		<h6 id="cat">Hi There, cat!</h6>
+		<h6 id="dog">Hi There, dog!</h6>
+	</div>
+
+	<!-- <footer class="page-footer">
+		<div class="footer-copyright">
+			<div class="container">
+				Copyright &copy; 2018 Monkwish | All rights reserved.
+			</div>
+		</div>
+	</footer> -->
+
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="materialize.min.js"></script>
+
+</body>
+</html>

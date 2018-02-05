@@ -1,0 +1,33 @@
+  body 
+  {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .dropBtn, .mybtn
+  {
+    padding-top: 10%;
+    text-align: center;
+  }
+
+  form
+  {
+    display: none;
+  }
+
+  .message
+  {
+    padding-top: 5%;
+    text-align: center;
+    display: none;
+  }
+
+  .center
+  {
+    text-align: center;
+  }
